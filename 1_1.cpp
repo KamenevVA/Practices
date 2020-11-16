@@ -1,34 +1,22 @@
 #include <iostream>
 using namespace std;
 int a, b, c;
+int maximum;
 int main()
 {
-    cin >> a;
-    cin >> b;
-    cin >> c;
-    if (a > c)
+    cin >> a >> b >> c;
+    if (a > b)
     {
-        if (a > b)
-        {
-            cout << a;
-        }
-        else
-        {
-            cout << b;
-        }
-
+        maximum = a;
+    }
+    else if (b > c)
+    {
+        maximum = b;
     }
     else
     {
-        if (b > c)
-        {
-            cout << b;
-        }
-        else
-        {
-            cout << c;
-        }
+        maximum = c;
     }
-
+    cout << maximum;
     return 0;
 }
