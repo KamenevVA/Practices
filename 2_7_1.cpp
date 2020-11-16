@@ -1,10 +1,10 @@
-﻿#include <iostream>
+#include <iostream>
 using namespace std;
 int n, a;
 
-
 int main()
 {
+	setlocale(LC_ALL, "");
 	cin >> n;
 	a = sqrt(n);
 	if (a * a == n)
@@ -13,7 +13,7 @@ int main()
 		{
 			for (int j = 1; j <= a; j++)
 			{
-				cout << "*";
+				cout << "* ";
 			}
 			cout << "\n";
 		}
