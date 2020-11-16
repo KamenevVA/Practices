@@ -1,21 +1,18 @@
-﻿#include <iostream>
+#include <iostream>
 using namespace std;
 int a, b;
 int main()
 {
-    cin >> a;
-    cin >> b;
+    setlocale(LC_ALL, "");
+    cin >> a >> b;
     if (a == 0)
     {
         cout << 0;
     }
-    else
-    {
-        if (b == 0)
+    else if (b == 0)
         {
             cout << "Такое, к сожалению, невозможно(";
         }
-    }
     if (a != 0 && b != 0)
     {
         cout << a / b;
