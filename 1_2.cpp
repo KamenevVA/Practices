@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int a, b;
+float a, b;
 int main()
 {
     setlocale(LC_ALL, "");
